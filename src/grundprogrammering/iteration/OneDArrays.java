@@ -11,32 +11,38 @@ public class OneDArrays {
     int T4[] = { 36, 20, 71, 45, 94, 36, 41 };
     int T5[] = { 53, 34, 31, 88, 85, 90, 11 };
 
+    // Opgave 14
     public void PrintFirstUneven() {
         System.out.println(Uneven[0]);
     }
 
+    // Opgave 15
     public void PrintLengthPosNeg() {
         System.out.println(PositiveAndNegative.length);
     }
 
+    // Opgave 16
     public void PrintFirst5FromTable() {
         for (int i = 0; i < 5; i++) {
             System.out.println(Table[i]);
         }
     }
 
+    // Opgave 17
     public void PrintAllFromT1() {
         for (int num : T1) {
             System.out.println(num);
         }
     }
 
+    // Opgave 18
     public void PrintMidAndLastFromT2() {
         int midIndex = Math.round(T2.length / 2);
         System.out.println(T2[midIndex]);
         System.out.println(T2[T2.length - 1]);
     }
 
+    // Opgave 19
     public void CalculateSumOfPosNeg() {
         int sum = 0;
         for (int num : PositiveAndNegative) {
@@ -45,6 +51,7 @@ public class OneDArrays {
         System.out.println(sum);
     }
 
+    // Opgave 20
     public void PrintNegativeFromPosNeg() {
         for (int num : PositiveAndNegative) {
             if (num < 0) {
@@ -53,18 +60,21 @@ public class OneDArrays {
         }
     }
 
+    // Opgave 21
     public void PrintInReverseOrderFromT3() {
         for (int i = T3.length - 1; i >= 0; i--) {
             System.out.println(T3[i]);
         }
     }
 
+    // Opgave 22
     public void ReplaceThreeFirstInT4FromT5() {
         for (int i = 0; i < 3; i++) {
             T4[i] = T5[T5.length - 3 + i];
         }
     }
 
+    // Opgave 23
     public void ReverseValuesInPosNeg() {
         for (int i = 0; i < PositiveAndNegative.length; i++) {
             PositiveAndNegative[i] = -PositiveAndNegative[i];
@@ -74,7 +84,8 @@ public class OneDArrays {
         }
     }
 
-    public void PrintFromOneToTenFromArrays() {
+    // Opgave 24
+    public void PrintFromOneToNineFromArrays() {
         for (int i = 0; i < 5; i++) {
             if (i == 0) {
                 System.out.println(Uneven[i]);
@@ -85,6 +96,7 @@ public class OneDArrays {
         }
     }
 
+    // Opgave 25
     public void ReverseValuesInT3() {
         int[] original = T3;
         for (int i = 0; i < T3.length; i++) {
@@ -93,5 +105,14 @@ public class OneDArrays {
         }
     }
 
-    
+    // Opgave 28
+    public void PrintLargestValueInT1() {
+        int largestValue = 0;
+        for (int num : T1) {
+            if (num > largestValue) {
+                largestValue = num;
+            }
+        }
+        System.out.println(largestValue);
+    }
 }
