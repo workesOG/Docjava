@@ -1,4 +1,4 @@
-package grundprogrammering.iteration;
+package basic_programming.iteration;
 
 // Opgave 41
 public class TicTacToe {

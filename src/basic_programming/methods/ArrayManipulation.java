@@ -1,4 +1,4 @@
-package grundprogrammering.metoder;
+package basic_programming.methods;
 
 public class ArrayManipulation {
     // Opgave 8

@@ -1,4 +1,4 @@
-package grundprogrammering.iteration;
+package basic_programming.iteration;
 
 // Opgave 6
 public class SumOfOddNumbers {
