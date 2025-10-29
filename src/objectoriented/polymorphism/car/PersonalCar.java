@@ -1,6 +1,7 @@
 // En konsekvens ved at denne klasse er del af packagen "car" er, at den også er nødt til at ligge i en mappe med navnet "car".
 package objectoriented.polymorphism.car;
 
+// Opgave 3 - Sammen med Car.java og FreightCar.java
 public class PersonalCar extends Car {
     float maxPassengers;
 

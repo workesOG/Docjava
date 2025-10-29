@@ -1,6 +1,7 @@
 // En konsekvens ved at denne klasse er del af packagen "car" er, at den også er nødt til at ligge i en mappe med navnet "car".
 package objectoriented.polymorphism.car;
 
+// Opgave 3 - Sammen med PersonalCar.java og FreightCar.java
 public abstract class Car {
     float weight;
 
@@ -26,3 +27,39 @@ public abstract class Car {
 
     public abstract double yearlyCost();
 }
+
+/* Testkode for opgave 3
+FreightCar fc1 = new FreightCar(2000, 400);
+System.out.println(fc1.toString());
+
+PersonalCar pc1 = new PersonalCar(1100, 5);
+System.out.println(pc1.toString());
+
+FreightCar fc2 = new FreightCar(fc1);
+System.out.println(fc2.toString());
+
+PersonalCar pc2 = new PersonalCar(pc1);
+System.out.println(pc2.toString());
+
+Output:
+Type: Freight Car
+   - Weight: 2000kg
+   - Max load: 400kg
+   - Fees: 780kr / year
+
+Type: Personal Car
+   - Weight: 1100kg
+   - Max passengers: 5
+   - Fees: 4550kr / year
+
+Type: Freight Car
+   - Weight: 2000kg
+   - Max load: 400kg
+   - Fees: 780kr / year
+
+Type: Personal Car
+   - Weight: 1100kg
+   - Max passengers: 5
+   - Fees: 4550kr / year
+
+ */
