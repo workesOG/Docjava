@@ -1,19 +1,18 @@
-import basic_programming.objectoriented.inheritance.Circle;
-import basic_programming.objectoriented.inheritance.Rectangle;
-import basic_programming.objectoriented.inheritance.Point;
+import objectoriented.polymorphism.car.PersonalCar;
+import objectoriented.polymorphism.car.FreightCar;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Point p = new Point(0, 0);
+        FreightCar fc1 = new FreightCar(2000, 400);
+        System.out.println(fc1.toString());
 
-        System.out.println(p.toString());
+        PersonalCar pc1 = new PersonalCar(1100, 5);
+        System.out.println(pc1.toString());
 
-        p.move(1, 1);
-        Circle c = new Circle(p, 3);
-        System.out.println(c.toString());
-        
-        p.move(4, -3);
-        Rectangle r = new Rectangle(p, 4, 5);
-        System.out.println(r.toString());
+        FreightCar fc2 = new FreightCar(fc1);
+        System.out.println(fc2.toString());
+
+        PersonalCar pc2 = new PersonalCar(pc1);
+        System.out.println(pc2.toString());
     }
 }

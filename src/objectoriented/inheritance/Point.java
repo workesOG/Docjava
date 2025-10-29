@@ -1,4 +1,4 @@
-package basic_programming.objectoriented.inheritance;
+package objectoriented.inheritance;
 
 // Opgave 1 - Sammen med Circle.java og Rectangle.java
 public class Point {
@@ -37,7 +37,7 @@ p.move(4, -3);
 Rectangle r = new Rectangle(p, 4, 5);
 System.out.println(r.toString());
 
-OUTPUT:
+Output:
 Point(0, 0)
 Circle(Point(1, 1), radius=3, area=28.274333882308138, circumference=18.84955592153876)
 Rectangle(Point(5, -2), height=4, width=5, area=20.0, circumference=18.0)

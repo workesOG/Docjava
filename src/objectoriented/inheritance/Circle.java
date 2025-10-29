@@ -1,4 +1,4 @@
-package basic_programming.objectoriented.inheritance;
+package objectoriented.inheritance;
 
 // Opgave 1 - Sammen med Point.java og Rectangle.java
 public class Circle extends Point {
