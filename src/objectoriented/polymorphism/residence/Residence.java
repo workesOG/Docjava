@@ -2,7 +2,6 @@ package objectoriented.polymorphism.residence;
 
 import java.text.DecimalFormat;
 
-// Opgave 2 - Sammen med Apartment.java og Villa.java
 public abstract class Residence {
     float totalArea;
     float indoorArea;
